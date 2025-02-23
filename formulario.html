@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="CSS/imgs/icon.png" type="image/x-icon">
+</head>
+<body id="formulario">
+    
+    <h1 id="h1formulario">Formulario de Participación: Breaking Bad – Que comience el juego!</h1>
+
+    <form class="formulario" action="mailto:raul.rodriguez@proeducaglobal.com" method="post" enctype="multipart/form-data">
+        
+        <!--Datos personales-->
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre: *</label>
+            <input type="text" required><br><br>
+
+            <label for="apellidos">Apellidos: *</label>
+            <input type="text" required><br><br>
+
+            <label for="direccion">Dirección Postal:</label><br>
+            <input type="text"><br><br>
+            
+            <label for="calle">Calle:</label>
+            <input type="text"><br><br>
+
+            <label for="numero">Número:</label>
+            <input type="text"><br><br>
+
+            <label for="piso">Piso:</label>
+            <input type="text"><br><br>
+
+            <label for="cp">Código Postal:</label>
+            <input type="text"><br><br>
+
+            <label for="ciudad">Ciudad:</label>
+            <input type="text"><br><br>
+
+            <label for="dni">DNI:</label>
+            <input type="text"><br><br>
+
+            <label for="email">Correo Electrónico: *</label>
+            <input type="email" required><br><br>
+        </fieldset>
+
+        <fieldset id="sexo">
+            <legend>Sexo</legend>
+        
+            <label>
+                <input type="radio" name="sexo" value="hombre"> Hombre
+            </label>
+        
+            <label>
+                <input type="radio" name="sexo" value="mujer"> Mujer
+            </label>
+        
+        </fieldset>
+
+        <!--Fecha de nacimiento-->
+        <fieldset>
+            <legend>Fecha de Nacimiento</legend>
+            <label for="fecha_nacimiento">Selecciona tu fecha de nacimiento:</label>
+            <input type="date"><br><br>
+        </fieldset>
+
+        <!--Selección de personaje-->
+        <fieldset>
+            <legend>Selecciona tu personaje favorito de Breaking Bad</legend>
+            <label for="personaje">Personaje:</label>
+            <select id="personaje">
+                <option value="Jessie Pinkman">Jessie Pinkman</option>
+                <option value="Walter White">Walter White</option>
+                <option value="Saul Goodman">Saul Goodman</option>
+                <option value="Gustavo Fring">Gustavo Fring</option>
+                <option value="Pollos Hermanos">Pollos Hermanos</option>
+                <option value="Otros personajes">Otros personajes</option>
+            </select><br><br>
+        </fieldset>
+
+        <!--Caja de comentarios-->
+        <fieldset>
+            <legend>Comentarios</legend>
+            <textarea rows="10" cols="50"></textarea><br><br>
+        </fieldset>
+
+        <!--Archivos adjuntos-->
+        <fieldset>
+            <legend>Adjuntar Archivos</legend>
+            <label for="archivo">Selecciona un archivo:</label>
+            <input type="file"><br><br>
+        </fieldset>
+
+        <!--Botones-->
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button><br><br>
+    </form>
+    
+</body>
+</html>
